@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background-color: #1D2B53;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu {
+    background-color: #7E2553;
+    color: #FAEF5D;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 30px;
+    align-items: center;
+    justify-content: center; 
+}
+.menu > div {
+   text-align: center;
+}
+.pressed {
+     background-color: #e0c3d2;
+   
+}
+.content {
+   color: #FF004D;
+}
+
+#btn-div{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    background-color: #7E2553;
+    color: #FAEF5D;
+
+}
+.mouseover{
+    background-color: #ec7db7;
+}
