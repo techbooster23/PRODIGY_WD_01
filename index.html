@@ -3,33 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Responsive webpage</title>
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
 </head>
 <body>
-    <div class="menu">
-        <div class=" menu-items home">Home</div>
-        <div class=" menu-items services">Services</div>
-        <div class=" menu-items contact">contact</div>
-        <div class=" menu-items about">About</div>
-        <div class=" menu-items help">Help</div>
+    <div class="navbar">
+            <div id="title">Space Info</div>
+            <div id="mnu-items">
+                <span>Home</span>
+                <span>About</span>
+                <span>Services</span>
+                <span>Contact</span>
+                <img src="./assets/menubtn.png" alt="menu" id="mnu">
+            </div>
     </div>
-    
-
-
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center content">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 fw-normal">Punny headline</h1>
-          <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+    <div class="mob-navbar">
+        <div id="close"><img src="./assets/closebtn.png" alt="close"></div>
+        <div id="mob-mnu-items">
+            <span>Home</span>
+            <span>About</span>
+            <span>Services</span>
+            <span>Contact</span>
         </div>
-       </div>
-  <div id="btn-div">
-       <button class="btn">Coming soon</button>
-  </div>
+    </div>
+   
+    <div class="info">
+        <div id="card">
+            <img src="https://theplanets.org/123/2022/03/One-day-on-Venus.gif" alt="venus">
+            <p>Venus has a slow axis rotation which takes 243 Earth days to complete its day. The orbit of Venus around the Sun is 225 Earth days, making a year on Venus 18 days less than a day on Venus.</p>
+        </div>
+        <div id="card">
+            <img src="https://theplanets.org/123/2022/03/planet-made-out-of-diamonds.jpg" alt="">
+            <p>As space facts go, this is pretty impressive. Research by Yale University scientists suggests that a rocky planet called 55 Cancri e. It is twice the size of Earth and has a mass eight times greater.</p>
+        </div>
+        <div id="card">
+            <img src="https://theplanets.org/123/2022/03/largest-known-asteroid.jpg" alt="">
+            <p>Discovered by Italian astronomer Giuseppe Piazzi in 1801, the dwarf planet Ceres was the first, and largest, object to be considered an asteroid. It is located in the Asteroid Belt between the orbits of Mars and Jupiter</p>
+        </div>
+        
+    </div>
 
-
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
