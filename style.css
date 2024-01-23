@@ -1,44 +1,220 @@
-* {
+*{
     margin: 0;
     padding: 0;
+}
+body{
+    background: url(https://theplanets.org/wp-content/uploads/2014/12/stars.jpg) no-repeat;
+}
+.navbar{
+    width: 100%;
+    background-color: #001C30;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+#title {
+    color: #176B87;
+    font-weight: 900;
+    font-size: 1.45em;
+    margin: 5px 10px 5px 20px;
+}
+#mnu{
+    display: none;
+}
+#mnu-items{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    color: #176B87;
+    width: 50%;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+#mnu-items > span {
+    margin-right: 10px;
+}
+.mob-navbar{
+    position:relative;
+    height: 100vh;
+    background-color: #001C30;
+    display: none;
+}
+.mob-navbar #close{
+    padding-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+#mob-mnu-items{
+    width: 100%;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-orient: vertical;
+     -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+             flex-direction: column;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+      font-size: 1.25rem;
+      color: #176B87;
+}
+#mob-mnu-items > span {
+      margin-top: 3rem;
+}
+
+.info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 80vh;
     
 }
-body {
-    background-color: #1D2B53;
-    height: 100vh;
+#card {
+    border-radius: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #3D3B40;
+    width: 320px;
+    height: 450px;
+    color: antiquewhite;
 }
-.menu {
-    background-color: #7E2553;
-    color: #FAEF5D;
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 30px;
-    align-items: center;
-    justify-content: center; 
+#card p{
+    padding: 10px;
 }
-.menu > div {
-   text-align: center;
+#card img {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
 }
-.pressed {
-     background-color: #e0c3d2;
-   
-}
-.content {
-   color: #FF004D;
+@media (max-width: 500px){
+      #mnu{
+        display: block;
+        height: 2rem;
+        
+      }
+      #mnu-items > span {
+        display: none;
+      }
+      #mnu-items{
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: flex-end;
+        padding: 0;
+      }
 }
 
-#btn-div{
-    display: flex;
-    justify-content: center;
+@media (max-width: 1000px){
+    #card {
+        width: 300px;
+        height: 430px;
+    } 
+    #card > img{
+        width: 300px;
+        height: 300px;
+     }
+     
 }
-.btn {
-    background-color: #7E2553;
-    color: #FAEF5D;
-
+@media (max-width: 920px){
+    #card {
+        width: 260px;
+        height: 390px;
+        font-size: 0.9em;
+    } 
+    #card > img{
+        width: 260px;
+        height: 260px;
+     }
+     
 }
-.mouseover{
-    background-color: #ec7db7;
+@media (max-width: 800px){
+    #card {
+        width: 220px;
+        height: 350px;
+        font-size: 0.8em;
+    } 
+    #card > img{
+        width: 220px;
+        height: 220px;
+     }
+     
+}
+@media (max-width: 685px){
+    #card {
+        width: 180px;
+        height: 310px;
+        font-size: 0.7em;
+    } 
+    #card > img{
+        width: 180px;
+        height: 180px;
+     }
+     
+}
+@media (max-width: 575px){
+    #card {
+        width: 140px;
+        height: 270px;
+        font-size: 0.6em;
+    } 
+    #card > img{
+        width: 140px;
+        height: 140px;
+     }
+     
+}
+@media (max-width: 450px){
+    #card {
+        width: 100%;
+        height: auto;
+        font-size: 1em;
+        background-color: transparent;
+    } 
+    .info{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        height: auto;
+    }
+    #card > img{
+        width: 100%;
+        height: auto;
+     }
+     
 }
